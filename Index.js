@@ -19,9 +19,10 @@ canvas.addEventListener("mousedown", start, false);
 canvas.addEventListener("mousemove", draw, false);
 
 
-canvas.addEventlistener("touchend", stop, false);
-canvas.addEventListener("mouseup", stop, false);
-canvas.addEventlistener("mouseout", stop, false);
+canvas.addEventListener("touchend", stop , false);
+// canvas.addEventListener("touchend", stop, false);
+// canvas.addEventListener("mouseup", stop, false);
+// canvas.addEventlistener("mouseout", stop, false);
 
 function start(event) {
     is_drawing= true;
@@ -46,18 +47,19 @@ function draw(event) {
         }
 
 
-function stop(event) {        
-    if ( is_drawing) {
-            context.stroke();
-            context.closePath();
-            is_drawing = false;
-    }
-    event.preventDefault();
-}
-
 function upload(){
     var fileinput = document.getElementById("finput");
     var image = new SimpleImage(fileinput);
     var canvas = document.getElementById("canvas");
     image.drawTo(canvas);
   }
+
+
+// function stop(event) {        
+//     if ( is_drawing) {
+//             context.stroke();
+//             context.closePath();
+//             is_drawing = false;
+//     }
+//     event.preventDefault();
+// }
