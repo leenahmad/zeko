@@ -11,8 +11,8 @@ body{
 }
 
 canvas{
-    /* width: 800px;
-    height: 600px; */
+    width: 800px;
+    height: 600px;
     border:1pt solid lightgray; 
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
