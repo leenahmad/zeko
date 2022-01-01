@@ -6,18 +6,30 @@ body{
     margin: 0px;
     padding: 30px;
     font-family: "Mukta";
-    overflow: hidden;
+    overflow: "scroll";
     background: #313131;
+  
 }
 
-canvas{
+  /* canvas{
     width: 800px;
-    height: 600px;
-    border:1pt solid lightgray; 
+    height: 600px; 
+    
+    border:1pt solid lightgray;
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
     margin: auto;
     display: block;
+  }  */
+
+  .column {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
   }
 
 .tools {
@@ -71,7 +83,7 @@ canvas{
     margin: 0 10px;
     height: 50px;
 }
-pen-range {
-    align-self: center;
-    margin: 0 10px;
+.pen-range{
+  align-self: center;
+  margin: 0 10px;
 }
